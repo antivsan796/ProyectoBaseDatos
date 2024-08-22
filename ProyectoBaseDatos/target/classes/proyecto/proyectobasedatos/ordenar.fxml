@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="407.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto.proyectobasedatos.OrdenarController">
+   <children>
+      <Label layoutX="423.0" layoutY="60.0" text="---------------------------------" />
+      <Label fx:id="nombreText" layoutX="418.0" layoutY="43.0" text="Label" />
+      <VBox fx:id="vBoxOrden" layoutX="416.0" layoutY="77.0" prefHeight="261.0" prefWidth="215.0" />
+      <TreeTableView fx:id="treeTableView" layoutX="1.0" prefHeight="407.0" prefWidth="415.0">
+        <columns>
+          <TreeTableColumn fx:id="descripcion" prefWidth="254.0" text="Descripción" />
+          <TreeTableColumn fx:id="precio" prefWidth="82.0" text="Precio" />
+            <TreeTableColumn fx:id="accionColumna" prefWidth="75.0" />
+        </columns>
+      </TreeTableView>
+      <Label layoutX="432.0" layoutY="342.0" text="Total a pagar" />
+      <TextField fx:id="totalPagar" editable="false" layoutX="517.0" layoutY="338.0" prefHeight="25.0" prefWidth="99.0" text="0" />
+      <Label fx:id="idClienteText" layoutX="418.0" layoutY="17.0" text="Label" />
+      <Button layoutX="541.0" layoutY="368.0" mnemonicParsing="false" onAction="#ConfirmarOrden" text="Confirmar" />
+      <Button layoutX="433.0" layoutY="368.0" mnemonicParsing="false" onAction="#CancelarOrden" text="Cancelar" />
+   </children>
+</AnchorPane>
