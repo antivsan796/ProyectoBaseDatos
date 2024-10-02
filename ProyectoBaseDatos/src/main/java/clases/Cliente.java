@@ -14,6 +14,7 @@ public class Cliente {
     private String nombre;
     private String apellido;
     private String cd;
+    //snjsajsbhsabhsahbsfa
 
     public String getUsuario() {
         return usuario;
