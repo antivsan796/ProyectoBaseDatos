@@ -40,3 +40,4 @@ public class Cliente {
         return idCliente;
     }
 }
+//prueba de diseño
