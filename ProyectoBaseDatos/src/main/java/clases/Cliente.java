@@ -13,6 +13,7 @@ public class Cliente {
     private String usuario;
     private String nombre;
     private String apellido;
+    private String cd;
 
     public String getUsuario() {
         return usuario;
